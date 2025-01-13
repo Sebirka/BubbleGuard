@@ -1,0 +1,58 @@
+anti-dupe: # времено не работает
+  # список заблокированных предметов и их кол-во (ITEM: 64)
+  items:
+    PLAYER_HEAD: 48
+  words:
+    - "dupe"
+    - "дюп"
+    - "dsc.gg/"
+    - "https:"
+    - "http:"
+    - "переезд"
+    - "переходим"
+    - "слив"
+    - "там"
+    - "админ"
+antipiar:
+
+  # команды где не будет проверятся запрет. слово
+
+  whitelist:
+    - /ban
+    - /mute
+    - /banip
+    - /muteip
+
+  # список заблокированных слов.
+
+  words: "25565|freedon|dragonsgrief|winworld|forcerise|oudwor|fоrсerisе|rise|force|jungle|копия|juпgle|mc,junglegrief,ru|kollyworld|нурик|селестиал|catlavan|artygrief|bravohvh|экспенсив|lateworld|toolcube|cubeworld|metahvh|grieftool|wisegrief|reallyfake|wightgrief|f1.|aurorix|20tps.ru|gomc.fun|aternos.me|hovugrief|nellgrief|legitworld|whitegrief|holytime|spookytime|lonygrief|santyworld|slougrief|sollyworld|fakeworlds|raidmine|yummyland|hellhub|demongrief|premworld|unixrise|maksimushkavyruchayka_85920|vrhosting|unixworld|legendsgrief|brainmix|mclan.ru|legendaworld|tooltime|firstcube|richgrief|gamely|"
+
+  # команда, которая будет выполнена от имени консоли
+
+  command: []
+
+  # текст, который будет писаться игроку
+
+  message: "§cВ вашем сообщении замечены запрещенные слова."
+  message-cmd: "§cВ вашей команде замечены запрещенные слова."
+# Настройки цветовых порогов для MSPT
+msptThresholds:
+  "15": # число mspt при котором будет это действие выполнено
+    action: "remove_mobs" # дейсвтие
+    hoverMessage: "Действие очистка мобов выполнена" # сообщение при наводе на сообщение
+  "25":
+    action: "disable_physics"
+    hoverMessage: "Действие физика отключена"
+
+maxMinecartCount: 30
+
+checkIntervalTicks: 60    # Интервал проверки MSPT (20 тиков = 1 секунда)
+messageCooldown: 15000    # Задержка между уведомлениями в миллисекундах (15 секунд)
+
+messages:
+  msptMessage: "&8(&6SC&8) &6grief Server &8» &7>%.2f mspt"
+  hoverMessage: "&cОчистка мобов выполнена."
+  phyenable: "Физика включена"
+
+permissions:
+  notify: "BubbleGuard.alert"    # Разрешение для получения уведомлений
